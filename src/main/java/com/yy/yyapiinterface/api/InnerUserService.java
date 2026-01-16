@@ -10,4 +10,11 @@ public interface InnerUserService {
      * @return true/false
      */
     boolean isAccessible(String accessKey, String body, String signed);
+
+    /**
+     * 获取secretKey
+     * @param accessKey ak
+     * @return secretKey
+     */
+    String getSecretKey(String accessKey);
 }
